@@ -16,7 +16,7 @@ export class ProfilePage implements OnInit {
 
   ngOnInit() {
     this.profileId=this.activateRouter.snapshot.paramMap.get('id')
-     this.http.get('https://rickandmortyapi.com/api/character/'+ this.profileId)
+     this.http.get('https://rickandmortyapi.com/api/location/'+ this.profileId)
      .subscribe(res => {
       console.log(res);
       this.character = res });
